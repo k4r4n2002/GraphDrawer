@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="UTF-8">
+<title>Grapher</title>
+<link rel="shortcut icon" type="image/x-icon"
+	href="files/img/grapher_icon.jpg" />
+
+<!-- jquery files -->
+<script type="text/javascript" src="files/libs/jquery/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="files/libs/jquery/jquery-ui.js"></script>
+
+<!-- our javascript files -->
+<script type="text/javascript" src="files/js/master.js"></script>
+<script type="text/javascript" src="files/js/graph_theory.js"></script>
+<script type="text/javascript" src="files/js/variables.js"></script>
+<script type="text/javascript" src="files/js/graph_functions.js"></script>
+<script type="text/javascript" src="files/js/file-handler.js"></script>
+<script type="text/javascript" src="files/js/drawing_functions.js"></script>
+<script type="text/javascript" src="files/js/planner_test.js"></script>
+<script type="text/javascript" src="files/js/cyclesFounder.js"></script>
+<script type="text/javascript" src="files/js/Euler_methods.js"></script>
+<script type="text/javascript" src="files/js/shortest_path.js"></script>
+
+
+<!-- our style file -->
+<link rel="stylesheet" type="text/css" href="files/css/master.css" />
+</head>
+
+<body>
+		<!-- main wrapper View -->
+	<div id="mainWrapper">
+			<!-- Left Menu Panel  -->
+		<div id="leftPanel">
+			<div id="leftPanelMenu"></div>
+			<div id="leftPanelIcon" onclick="closeOpenLeftPanel();">
+				<div class="slidePanelIcon"></div>
+			</div>
+		</div>
+		<!-- Main Side View of the App -->
+		<div id="mainBody">
+			<div id="pageHeader">
+				<div id="siteTitle">
+					<div class="mainTitle">Graph Drawer</div>
+					<div class="subTitle">Based on Graph Theory</div>
+				</div>
+			</div>
+			<!-- The fun part of the App -->
+			<div id="mainPageContainer"></div>
+			<div id="pageFooter">With ❤️ by Karan Dhingra</div>
+		</div>
+	</div>
+	<!-- Open file Popup to select file -->
+	<div id="openFileContainer">
+		<div id="openFileDaialog">
+			<input type="file" id="files" name="files[]" multiple />
+			<div id="drop_zone">or Drop file here</div>
+			<div class="spinner">
+				<div class="loader"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
